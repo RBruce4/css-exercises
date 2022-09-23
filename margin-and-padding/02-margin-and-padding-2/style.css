@@ -6,22 +6,50 @@ body {
 .card {
   width: 400px;
   background: #fff;
+  display: block;
   margin: 16px auto;
+  padding: 8px;
 }
 
 .title {
+  font-size: 16px;
   background: #e3f4ff;
+  padding: 8px;
+  margin: 0px;
+
 }
 
 .content {
   background: #e3f4ff;
+  padding: 8px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin: 8px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .button-container {
   background: #e3f4ff;
+  padding: 8px;
+  text-align: center;
 }
 
 button {
   background: white;
   border: 1px solid #eee;
+  display: block;
+  padding: 8px;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin: auto;
 }
+
+
+/* try putting all the margin stuff in the body, since it should all
+be inherited by the rest of the elements, and it looks like they're 
+all the same.
+
+this didn't work because the card itself is formatted by body tag. 
+making a card and child selector did the trick*/
+
